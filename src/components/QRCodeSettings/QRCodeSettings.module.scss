@@ -1,0 +1,70 @@
+@import "../../scss/vars.scss";
+
+.settings {
+  border-radius: 10px;
+  grid-area: 2 / 2 / 3 / 3;
+  background: $white;
+  padding: 15px 20px;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__section {
+    display: flex;
+    flex-wrap: wrap;
+    // row-gap: 4px;
+    margin: 15px 0;
+    // padding-left: 10px;
+    // justify-content: space-between;
+  }
+
+  &__input {
+    border: 1px solid $violet-secondary;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    padding: 2px 5px;
+    font: .875rem/1.125rem 'Segoe UI', sans-serif;
+
+  }
+}
+
+.section {
+
+  &__title {
+    flex-basis: 100%;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__inputs {
+    display: flex;
+    column-gap: 15px;
+    padding-left: 15px;
+    border-left: 2px solid $fc-primary;
+  }
+}
+
+.input {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: .875rem;
+  }
+
+  &_number {
+    width: 65px;
+  }
+
+  &_color {
+    width: 40px;
+    padding: 0 3px;
+    background: transparent;
+  }
+
+  &_list {
+    width: 190px;
+  }
+}

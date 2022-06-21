@@ -1,0 +1,27 @@
+@import "../../scss/vars.scss";
+
+.dataType {
+  grid-area: 1 / 1 / 3 / 2;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: $white;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    border: 1px solid transparent;
+    padding: 5px 0;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom-color: $violet-secondary;
+    }
+
+    &[data-checked] {
+      background: $violet-secondary;
+    }
+  }
+}
